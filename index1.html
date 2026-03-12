@@ -25,21 +25,21 @@
 
     header {
       text-align: center;
-      padding: 3rem 1rem 2rem;
+      padding: 4rem 1rem 3rem;
       background: linear-gradient(135deg, var(--accent-color), #0099ff);
       color: white;
     }
 
     header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 0.5rem;
+      font-size: 3rem;
+      margin-bottom: 1rem;
     }
 
     header p {
-      max-width: 600px;
+      max-width: 700px;
       margin: 0 auto;
-      opacity: 0.9;
-      font-size: 1.1rem;
+      opacity: 0.95;
+      font-size: 1.2rem;
     }
 
     /* ----------- CAPÍTULOS ----------- */
@@ -55,7 +55,7 @@
       align-items: center;
       max-width: 900px;
       margin: 3rem auto;
-      padding: 2rem;
+      padding: 2.5rem;
       background-color: var(--chapter-bg);
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
       border-radius: 16px;
@@ -69,46 +69,56 @@
     .chapter img {
       max-width: 100%;
       border-radius: 12px;
-      margin: 1rem 0;
+      margin: 1.5rem 0;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
     .chapter h2 {
-      margin-bottom: 0.5rem;
+      margin-bottom: 1rem;
       color: var(--accent-color);
+      font-size: 1.8rem;
+      width: 100%;
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
     }
 
     .chapter p {
       text-align: justify;
-      margin-bottom: 1rem;
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      width: 100%;
     }
 
     .map-frame {
       width: 100%;
-      height: 480px;
+      height: 550px;
       border: none;
       border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      margin-top: 1rem;
     }
 
     footer {
       text-align: center;
       padding: 2rem 1rem;
-      font-size: 0.9rem;
-      color: #666;
+      font-size: 0.95rem;
+      color: #555;
       border-top: 1px solid #ddd;
       background-color: #fafafa;
+      margin-top: 2rem;
     }
 
     footer a {
       color: var(--accent-color);
       text-decoration: none;
+      font-weight: bold;
     }
 
     /* ----------- RESPONSIVE ----------- */
     @media (max-width: 700px) {
-      header h1 { font-size: 1.8rem; }
+      header h1 { font-size: 2rem; }
       .chapter { margin: 2rem 1rem; padding: 1.5rem; }
-      .map-frame { height: 360px; }
+      .map-frame { height: 400px; }
     }
   </style>
 </head>
@@ -116,14 +126,15 @@
 
   <header>
     <h1>Tesoros en Peligro</h1>
-    <p>Olas históricas y amenazas medioambientales en la Península Ibérica.</p>
+    <p>Un viaje interactivo a través de la historia de las olas y las graves amenazas medioambientales que acechan a la Península Ibérica y las Islas Canarias.</p>
   </header>
 
   <main>
 
     <section class="chapter">
-      <h2>Capítulo 1 — El Surf y la Fragilidad Litoral</h2>
-      <p>Este proyecto traza la evolución histórica del surf cruzando la información deportiva con la vulnerabilidad ecológica de nuestras costas. Navega por el mapa para descubrir la historia de los pioneros del surf europeo y las características técnicas que hacen único a cada enclave, a la vez que visualizas las amenazas que asedian estos lugares.</p>
+      <h2>Capítulo 1 — El Surf y la Fragilidad de la Costa</h2>
+      <p>Existe un vínculo inquebrantable, pero a menudo invisible, entre la geografía litoral que hace posible la formación de una gran ola y el grado de exposición de ese ecosistema a la acción humana. Este proyecto interactivo nace con el propósito de cartografiar esa dualidad: celebrar la historia del surf europeo y, al mismo tiempo, denunciar la extrema vulnerabilidad de nuestras playas.</p>
+      <p>Navegando por este mapa base de estilo minimalista, podrás descubrir los orígenes de lugares míticos que sirvieron de laboratorio para los pioneros de este deporte en los años 60 y 70. Cada marcador te desvelará características técnicas de los distintos enclaves, como el tipo de fondo marino o el tamaño máximo de las olas, y te pondrá frente a la dura realidad de las amenazas ecológicas que hoy los asedian.</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null"
@@ -133,8 +144,9 @@
     </section>
 
     <section class="chapter">
-      <h2>Capítulo 2 — Riesgos en el Mediterráneo y Atlántico Sur</h2>
-      <p>La visualización de coropletas revela patrones espaciales evidentes. Las zonas del Mediterráneo y el sur atlántico enfrentan altos niveles de riesgo debido a la asfixia urbanística y vertidos industriales (niveles de amenaza cercanos a 10), contrastando con la potente dinámica oceánica de la cornisa cantábrica, que limpia sus aguas con mayor frecuencia pero que sufre una gran presión turística.</p>
+      <h2>Capítulo 2 — Coropletas de Riesgo: De Levante al Atlántico Sur</h2>
+      <p>Al aplicar una capa térmica de coropletas al conjunto de datos, los patrones geoespaciales revelan una situación alarmante. La vertiente mediterránea y la costa suratlántica sufren una presión demográfica y urbanística insostenible. Enclaves históricos como La Barceloneta, la Albufera valenciana o el asfixiado Mar Menor alcanzan niveles críticos de amenaza (Nivel 10) debido a la contaminación por vertidos y a la severa regresión costera.</p>
+      <p>Más al sur, entornos teóricamente protegidos como el litoral del Parque Nacional de Doñana o la Ría de Huelva se enfrentan a problemas estructurales gravísimos, que van desde la sobreexplotación de los acuíferos hasta la contaminación histórica por la industria pesada. Si exploras el mapa en esta zona, el gradiente de calor muestra un cordón litoral que clama por soluciones urgentes de gestión medioambiental.</p>
 
       <iframe class="map-frame"
         src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null#6/38.500/-2.500"
@@ -144,11 +156,12 @@
     </section>
 
     <section class="chapter">
-      <h2>Capítulo 3 — Conclusiones y Conservación</h2>
-      <p>Hacer un buen mapa no es solo poner puntos sobre un fondo, sino saber guiar al usuario. El resultado no solo muestra dónde se surfeaba hace décadas, sino que lanza un mensaje visual muy claro sobre lo frágil que es el entorno que hace posibles esas olas. Es urgente conservar y proteger el límite donde el océano interactúa con la tierra.</p>
+      <h2>Capítulo 3 — Olas Gigantes, Usabilidad y Concienciación</h2>
+      <p>Si nos desplazamos hacia el litoral cantábrico y la costa portuguesa, encontraremos los iconos representativos de las mayores marejadas de Europa. Lugares mundialmente famosos como Nazaré, Peniche o Mundaka gozan de una dinámica oceánica brutal que limpia sus aguas con mayor frecuencia. Sin embargo, no están exentos de peligro: el turismo de masas y la alteración de los flujos de arena por dragados y puertos amenazan con destruir la batimetría perfecta de estos enclaves.</p>
+      <p>A nivel de diseño y usabilidad (UX), esta visualización ha sido configurada pensando en la accesibilidad total. Se ha optado por un mapa base de tonalidad clara que elimina el "ruido topográfico" y resalta las manchas térmicas de riesgo. Además, los colores elegidos para clasificar el tamaño de las olas responden a una paleta adaptada para daltónicos, asegurando que el mensaje sea inclusivo. En definitiva, este mapa no es solo una herramienta para encontrar buenas olas, sino un recordatorio interactivo de nuestra responsabilidad colectiva de proteger la frontera donde el mar abraza la tierra.</p>
 
       <iframe class="map-frame"
-        src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null#5/40.000/-4.000"
+        src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null#6/41.500/-6.000"
         allowfullscreen
         loading="lazy">
       </iframe>
