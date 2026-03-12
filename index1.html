@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tesoros en Peligro | StoryMap Interactivo</title>
+  <link rel="icon" type="image/png" href="https://umap.openstreetmap.fr/static/img/favicon.png">
+  <style>
+    /* ----------- ESTILOS BASE ----------- */
+    :root {
+      --bg-color: #f8f8f8;
+      --text-color: #222;
+      --accent-color: #004c99; /* Azul profesional del informe LaTeX */
+      --chapter-bg: #ffffffcc;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      background: linear-gradient(135deg, var(--accent-color), #0099ff);
+      color: white;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      max-width: 600px;
+      margin: 0 auto;
+      opacity: 0.9;
+      font-size: 1.1rem;
+    }
+
+    /* ----------- CAPÍTULOS ----------- */
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .chapter {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: var(--chapter-bg);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .chapter:hover {
+      transform: scale(1.01);
+    }
+
+    .chapter img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin: 1rem 0;
+    }
+
+    .chapter h2 {
+      margin-bottom: 0.5rem;
+      color: var(--accent-color);
+    }
+
+    .chapter p {
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 480px;
+      border: none;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+      color: #666;
+      border-top: 1px solid #ddd;
+      background-color: #fafafa;
+    }
+
+    footer a {
+      color: var(--accent-color);
+      text-decoration: none;
+    }
+
+    /* ----------- RESPONSIVE ----------- */
+    @media (max-width: 700px) {
+      header h1 { font-size: 1.8rem; }
+      .chapter { margin: 2rem 1rem; padding: 1.5rem; }
+      .map-frame { height: 360px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Tesoros en Peligro</h1>
+    <p>Olas históricas y amenazas medioambientales en la Península Ibérica y Canarias.</p>
+  </header>
+
+  <main>
+
+    <section class="chapter">
+      <h2>Capítulo 1 — El Surf y la Fragilidad Litoral</h2>
+      <p>Este proyecto traza la evolución histórica del surf cruzando la información deportiva con la vulnerabilidad ecológica de nuestras costas. Navega por el mapa para descubrir la historia de los pioneros del surf europeo y las características técnicas que hacen único a cada enclave, a la vez que visualizas las amenazas que asedian estos lugares.</p>
+
+      <iframe class="map-frame"
+        src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <section class="chapter">
+      <h2>Capítulo 2 — Riesgos en el Mediterráneo y Atlántico Sur</h2>
+      <p>La visualización de coropletas revela patrones espaciales evidentes. Las zonas del Mediterráneo y el sur atlántico enfrentan altos niveles de riesgo debido a la asfixia urbanística y vertidos industriales (niveles de amenaza cercanos a 10), contrastando con la potente dinámica oceánica de la cornisa cantábrica, que limpia sus aguas con mayor frecuencia pero que sufre una gran presión turística.</p>
+
+      <iframe class="map-frame"
+        src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null#6/38.500/-2.500"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </section>
+
+    <section class="chapter">
+      <h2>Capítulo 3 — Conclusiones y Conservación</h2>
+      <p>Hacer un buen mapa no es solo poner puntos sobre un fondo, sino saber guiar al usuario. El resultado no solo muestra dónde se surfeaba hace décadas, sino que lanza un mensaje visual muy claro sobre lo frágil que es el entorno que hace posibles esas olas. Es urgente conservar y proteger el límite donde el océano interactúa con la tierra.</p>
+
+      <iframe class="map-frame"
+        src="https://umap.openstreetmap.fr/es/map/tesoros-en-peligro-olas-y-amenazas_1373400?scaleControl=true&miniMap=false&scrollWheelZoom=false&zoomControl=true&allowEdit=false&moreControl=true&searchControl=null&tilelayersControl=null#5/40.000/-4.000"
+        allowfullscreen
+        loading="lazy">
+      </iframe>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Proyecto <strong>Tesoros en Peligro</strong> | Creado con <a href="https://umap.openstreetmap.fr/es/" target="_blank">uMap</a> y HTML5 · Plantilla adaptable por María Ariza · © 2026</p>
+  </footer>
+
+</body>
+</html>
